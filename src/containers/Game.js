@@ -1,4 +1,5 @@
 import React from 'react';
+import Support from '../containers/Support';
 import Menu from '../containers/Menu';
 import Record from '../containers/Record';
 import GameBoard from '../containers/GameBoard';
@@ -21,6 +22,7 @@ export default class Game extends React.Component {
     return (
       <div>
         <Menu buttons={menuButtons} size={boardSize}/>
+        <Support />
         <GameModel size={boardSize}/>
         <Grid container justify='center' style={styles.game}>
           <GameBoard size={boardSize}/>
