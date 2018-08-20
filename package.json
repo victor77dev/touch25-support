@@ -1,7 +1,7 @@
 {
   "name": "touch25",
   "version": "0.1.0",
-  "homepage": "https://victor77dev.github.io/touch25",
+  "homepage": "https://victor77dev.github.io/touch25-support",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.2.1",
