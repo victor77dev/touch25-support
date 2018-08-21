@@ -100,10 +100,11 @@ class Support extends React.PureComponent { // eslint-disable-line react/prefer-
         response: response,
         remoteip: userIp,
       }).then((response) => {
-        const [result, error, authenticator] = response.data.split("\n");
+        const [result, error] = response.data.split("\n");
         if (result === 'true') {
           window.ACPuzzle.destroy();
           this.setState({message: 'Thanks for your support!', solved: true});
+          // console.log(authenticator);
         } else {
           this.reGenPuzzle();
           console.log(error);
